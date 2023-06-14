@@ -6,6 +6,8 @@ const changeColor=()=>{
     document.body.style.backgroundColor=randomColor
 
     document.getElementById('color').innerText=randomColor
+
+    navigator.clipboard.writeText(randomColor)
 }
 
 document.getElementById('btn').addEventListener(
